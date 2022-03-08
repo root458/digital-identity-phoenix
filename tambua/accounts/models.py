@@ -1,6 +1,4 @@
 from django.db import models
-
-# The model used to pass data to the db
 class Customers(models.Model):
     customer_id = models.CharField(max_length=20, primary_key=True)
     first_name = models.CharField(max_length=50)
@@ -15,9 +13,10 @@ class CustomersWithFiles(models.Model):
     customer_id = models.CharField(max_length=20, primary_key=True)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
-    customer_photo = models.FileField(upload_to='') #Specify the url
+    customer_photo = models.FileField(upload_to='')
     customer_recording = models.FileField(upload_to='')
     customer_signature = models.FileField(upload_to='')
     customer_fingerprint = models.FileField(upload_to='')
     enrollment_date = models.DateField(auto_now=True)
+    
     

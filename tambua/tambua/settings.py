@@ -41,6 +41,10 @@ INSTALLED_APPS = [
     'accounts'
 ]
 
+# DEFAULT_FILE_STORAGE = 'storages.backends.azure_storage.AzureStorage'
+
+# STATICFILES_STORAGE = 'custom_storage.custom_azure.PublicAzureStorage'
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
